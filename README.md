@@ -34,7 +34,7 @@ LOCAL_MODE=True ( False nếu dùng Elasticsearch Cloud )
 
 
 
-Nếu sử dụng Elasticsearch Cloud:
+Nếu sử dụng Elasticsearch Cloud ( Không còn khả dụng ):
 - Vào src/chatbot/.env, chỉnh LOCAL_MODE = False
 - Comment container elasticsearch ở trong docker-compose.yml
 - Chạy docker-compose up --build
