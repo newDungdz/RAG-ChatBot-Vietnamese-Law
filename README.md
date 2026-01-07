@@ -1,9 +1,3 @@
-Link Google Drive Chi tiết Project:
-https://drive.google.com/drive/folders/10aCBigAKkBziuXMHkBcd70D96c3vAqDM
-
-Link Báo cáo:
-https://docs.google.com/document/d/1RaDzGh5KaLjDyYfc6lCLI4380iur3DR4d6obFOoL7lo/edit?usp=sharing
-
 ## Giới thiệu Tổng quan hệ thống
 
 Dự án này xây dựng một hệ thống **Retrieval-Augmented Generation (RAG)** cho **văn bản pháp luật tiếng Việt**, tập trung vào **chất lượng truy hồi**, **thiết kế cấu trúc dữ liệu**, và **độ tin cậy của pipeline**, thay vì tối ưu prompt hay sinh văn bản đầu ra.
@@ -60,3 +54,8 @@ Nếu dung Elasticsearch Local
 - Khi xong, mở link được hiện trên log của docker ( mặc định http://localhost:5000 )
 
 
+Link Google Drive Chi tiết Project:
+https://drive.google.com/drive/folders/10aCBigAKkBziuXMHkBcd70D96c3vAqDM
+
+Link Báo cáo:
+https://docs.google.com/document/d/1RaDzGh5KaLjDyYfc6lCLI4380iur3DR4d6obFOoL7lo/edit?usp=sharing
