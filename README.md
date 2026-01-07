@@ -1,7 +1,30 @@
-Link Google Drive:
+Link Google Drive Chi tiết Project:
 https://drive.google.com/drive/folders/10aCBigAKkBziuXMHkBcd70D96c3vAqDM
 
-Hướng dẫn sử dụng:
+Link Báo cáo:
+https://docs.google.com/document/d/1RaDzGh5KaLjDyYfc6lCLI4380iur3DR4d6obFOoL7lo/edit?usp=sharing
+
+## Giới thiệu Tổng quan hệ thống
+
+Dự án này xây dựng một hệ thống **Retrieval-Augmented Generation (RAG)** cho **văn bản pháp luật tiếng Việt**, tập trung vào **chất lượng truy hồi**, **thiết kế cấu trúc dữ liệu**, và **độ tin cậy của pipeline**, thay vì tối ưu prompt hay sinh văn bản đầu ra.
+
+Mục tiêu chính là tạo ra một **lớp truy hồi ngữ nghĩa chính xác và có thể kiểm soát**, phù hợp với các văn bản pháp luật có cấu trúc phân cấp phức tạp (Chương – Điều – Khoản), nơi yêu cầu cao về tính đúng đắn và khả năng truy vết nguồn.
+
+Hệ thống RAG gồm ba thành phần chính:
+
+### 1. Tiền xử lý & cấu trúc dữ liệu
+Văn bản pháp luật được chuyển từ dạng phân cấp sang dạng **flattened**, trong đó mỗi chunk tương ứng với một điều hoặc khoản cụ thể.  
+Metadata được giữ đầy đủ để bảo toàn **ngữ cảnh pháp lý** và **khả năng truy vết**.
+
+### 2. Truy hồi dựa trên vector (Recall)
+Các chunk được mã hóa bằng mô hình embedding tiếng Việt và lưu trữ trong **Elasticsearch**.  
+Giai đoạn này ưu tiên **recall cao**, nhằm đảm bảo không bỏ sót các điều khoản liên quan.
+
+### 3. Reranking (Precision)
+Một mô hình transformer reranker được áp dụng để sắp xếp lại các kết quả truy hồi, giúp cải thiện độ chính xác cho các truy vấn pháp luật có ngữ nghĩa phức tạp.
+
+
+## Hướng dẫn sử dụng:
 
 Các quy định:
 - Có môi trường chạy python trên máy ( như VSCode )
